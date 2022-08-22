@@ -1,0 +1,39 @@
+From af9899df4a2eff4f7883bb6c1be115c4b6ff1777 Mon Sep 17 00:00:00 2001
+From: Atanas Bunchev <atanas.bunchev@gmail.com>
+Date: Mon, 22 Aug 2022 16:29:07 +0300
+Subject: [PATCH] Adding modification note
+
+---
+ src/feature.h | 2 +-
+ src/version.c | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/feature.h b/src/feature.h
+index d594171ad..882685d73 100644
+--- a/src/feature.h
++++ b/src/feature.h
+@@ -839,7 +839,7 @@
+  *			a modified version of Vim.
+  *			Also from the "--with-modified-by" configure argument.
+  */
+-// #define MODIFIED_BY "John Doe"
++#define MODIFIED_BY "Atanas Bunchev"
+ 
+ /*
+  * Machine dependent:
+diff --git a/src/version.c b/src/version.c
+index e2882b67a..ce10bc60f 100644
+--- a/src/version.c
++++ b/src/version.c
+@@ -1705,7 +1705,7 @@ intro_message(
+ 	N_("version "),
+ 	N_("by Bram Moolenaar et al."),
+ #ifdef MODIFIED_BY
+-	" ",
++	"Modified version with Yocto and OpenEmbedded.",
+ #endif
+ 	N_("Vim is open source and freely distributable"),
+ 	"",
+-- 
+2.35.1
+
