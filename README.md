@@ -115,7 +115,7 @@ Assuming you're on a working linux distribution, preferably with at least 50 GB 
 
 11. Testing the image
 
-    After running the qemu image or booting the raspberry with SD card,
+    After running the qemu image or booting the raspberrypi with SD card,
     login as root if required (by default there is no password) and run:
 
         hello_world
@@ -129,7 +129,7 @@ Assuming you're on a working linux distribution, preferably with at least 50 GB 
     if target machine is raspberrypi board, hello_world will print:
 
         Hello world!
-        Running on Raspberry
+        Running on Raspberry Pi
 
 
     To see the vim patch you have to open vim without specifying a file.
