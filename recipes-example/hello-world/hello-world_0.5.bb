@@ -13,7 +13,7 @@ FILES:${PN} = "${bindir}/${NAME}"
 
 SYSTEM_NAME = "your_system"
 SYSTEM_NAME:qemuall = "QEMU"
-SYSTEM_NAME:rpi = "Raspberry"
+SYSTEM_NAME:rpi = "Raspberry Pi"
 
 do_compile () {
 	${CC} ${LDFLAGS} -DSYSTEM_NAME=\"${SYSTEM_NAME}\" -o ${NAME} main.c
